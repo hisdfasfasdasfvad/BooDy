@@ -94,7 +94,7 @@ message.author.send(".Best Commands" + `
 ".Server Commands"
             _roles | لمعرفت كم رتبه موجوده في اسرفر
               _clear | حذف الرسائل
-            _kick | طرض شخص من السيرفر 
+            _kick | طرد شخص من السيرفر 
 
 
 ".Bot Commands",
