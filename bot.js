@@ -78,6 +78,12 @@ client.on('ready', () => {//new ready event
 })
 
 client.on('message', message => {
+     if (message.content === prefix+"قابط") {
+message.author.send("https://discord.gg/zgVqJHp");
+    }
+});
+
+client.on('message', message => {
      if (message.content === "_help") {
 message.author.send(".Best Commands" + `
  ".**Codes..Server**"
