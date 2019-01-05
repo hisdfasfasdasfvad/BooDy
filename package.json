@@ -3,6 +3,8 @@
   "version": "2.1.0",
   "description": "",
   "main": "bot.js",
+  "scripts": {
+  "start": "node bot.js"
   },
   "dependencies": {
     "anti-spam": "^0.2.7",
