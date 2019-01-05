@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const prefix = "_";
 client.on('ready', () => {
   client.user.setGame(`_help***By**BooDy**`,'https://www.twitch.tv/ksa.7772');
   console.log('Codes By BooDy');
