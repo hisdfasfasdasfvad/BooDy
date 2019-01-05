@@ -88,9 +88,12 @@ message.author.send(".Best Commands" + `
 ".Server Commands"
             _roles | لمعرفت كم رتبه موجوده في اسرفر
               _clear | حذف الرسائل
-            
+            _kick | طرض شخص من السيرفر 
+
+
 ".Bot Commands",
              _bot | عدد السيرفرات التي تستخدم البوت
+             _يعطيك رابط سيرفر | رابط
 ".support"
            http://cutt.us/RolBot  | لـ أضافة البوت في سيرفرك
 By..BooDy..Bot**
