@@ -78,7 +78,7 @@ client.on('ready', () => {//new ready event
 })
 
 client.on('message', message => {
-     if (message.content === prefix+"قابط") {
+     if (message.content === prefix+"رابط") {
 message.author.send("https://discord.gg/zgVqJHp");
     }
 });
@@ -90,7 +90,7 @@ message.author.send(".Best Commands" + `
 **           _ping | سرعة الأتصال
               _id | معلومــات عــن حســابــك
             _say | ي كرر الكلام
-               -avatar | صورتك في الدسكورد
+               _avatar | صورتك في الدسكورد
 ".Server Commands"
             _roles | لمعرفت كم رتبه موجوده في اسرفر
               _clear | حذف الرسائل
@@ -109,11 +109,13 @@ By..BooDy..Bot**
  
  
 client.on('message', message => {
-    var args = message.content.split(/[ ]+/)
-    if(message.content.includes('discord.gg')){
-        message.delete()
-    return message.reply(`** يمنع ارسال الانفايتات في هاذا السيرفر : ! **`)
-    }
+if(message.content.includes('discord.gg')){
+                                  if(!message.channel.guild) return message.reply('** advertising me on DM ? :thinking:   **');
+if (!message.member.hasPermissions(['ADMINISTRATOR'])){
+message.delete()
+return message.reply(`** Not allowed to advertising Here :angry: ! **`)
+}
+}
 });
     client.on('message', message => {
      if (message.content === "_id") {
