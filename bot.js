@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const prefix = "!";
-const token = process.env.BOT_TOKEN;
 const owner = "``TGS_Super | Huler#2399``";
 
 client.on('ready', () => {
@@ -256,4 +255,4 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 });
 
 // ================================================================================
-client.login(token);
+client.login(process.env.BOT_TOKEN);
